@@ -39,6 +39,7 @@ $index_content = mysqli_fetch_assoc($result);
     <input type="text" name="picture_url" value="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : ''; ?>" required>
 
     <button type="submit">Save Changes</button>
+    <a href="edit_index.php?id=<?php echo isset($index_content['id']) ? $index_content['id'] : ''; ?>">Edit</a>
 </form>
 <a href="admin.php">Back to Admin</a>
 </body>
