@@ -1,9 +1,17 @@
+<?php
+include 'db.php';
+
+// Fetch the index content from the database
+$result = mysqli_query($conn, "SELECT * FROM index_content LIMIT 1");
+$index_content = mysqli_fetch_assoc($result);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yared's Portfolio</title>
+    <title><?php echo isset($index_content['name']) ? $index_content['name'] : 'Portfolio'; ?></title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -102,11 +110,11 @@
 
     <div class="hero">
         <div class="profile-pic">
-            <img src="self.jpg" alt="Yared's Profile Picture">
+            <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>">
         </div>
         <div class="intro">
-            <h1>Yared</h1>
-            <p>Welcome to my portfolio! I am a passionate web developer with expertise in creating visually appealing and user-friendly interfaces. With a strong foundation in HTML, CSS, and JavaScript, I strive to deliver seamless user experiences that engage and inspire. My commitment to staying updated with the latest trends and technologies allows me to craft responsive designs that work across various devices.</p>
+            <h1><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1>
+            <p><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
         </div>
     </div>
 
@@ -119,3 +127,4 @@
     </footer>
 </body>
 </html>
+    
