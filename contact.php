@@ -15,9 +15,8 @@ $result = mysqli_query($conn, "SELECT * FROM contact");
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-<h1>Contact List</h1>
+<h1>Contact me</h1>
 
-<h2>Existing Contacts</h2>
 <table>
     <tr>
         <th>Email</th>
