@@ -102,8 +102,8 @@ $index_content = mysqli_fetch_assoc($result);
     <nav>
         <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="about.php">About</a></li>
             <li><a href="project.php">Project</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
