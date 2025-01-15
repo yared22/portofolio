@@ -30,6 +30,9 @@ $about = mysqli_fetch_assoc($result);
             <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.php">Admin</a>
+            </li>
             
         </ul>
     </div>
