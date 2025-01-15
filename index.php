@@ -36,10 +36,14 @@ $index_content = mysqli_fetch_assoc($result);
 </nav>
 
 <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
-    <h1 class="mt-4"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1>
-    <p class="lead"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
-    <div class="profile-pic">
-        <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid rounded-circle" style="width: 150px;">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid rounded-circle" style="width: 250px;"> <!-- Increased size -->
+        </div>
+        <div class="col-md-6">
+            <h1 style="font-size: 3rem;  margin-left: -300px;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> <!-- Increased size -->
+            <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p> <!-- Increased size -->
+        </div>
     </div>
     <a href="index.php" class="btn btn-link">Back to Home</a>
 </div>
