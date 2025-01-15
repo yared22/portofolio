@@ -62,7 +62,7 @@ $result = mysqli_query($conn, "SELECT * FROM contact");
     <div class="container p-4">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <h5 class="text-uppercase">Follow Us</h5>
+                <h5 class="text-uppercase">Follow Me</h5>
                 <ul class="list-unstyled d-flex">
                     <li class="mr-3">
                         <a href="https://facebook.com" class="text-dark">Facebook</a>
