@@ -45,7 +45,6 @@ $index_content = mysqli_fetch_assoc($result);
             <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p> <!-- Increased size -->
         </div>
     </div>
-    <a href="index.php" class="btn btn-link">Back to Home</a>
 </div>
 
 <footer class="bg-light text-center text-lg-start mt-2">
