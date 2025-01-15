@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'db/db.php';
 
 // Fetch the index content from the database
 $result = mysqli_query($conn, "SELECT * FROM index_content LIMIT 1");
@@ -13,6 +13,7 @@ $index_content = mysqli_fetch_assoc($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($index_content['name']) ? $index_content['name'] : 'Portfolio'; ?></title>
     <link rel="stylesheet" href="style.css">
+    
     <style>
         body {
             font-family: 'Arial', sans-serif;

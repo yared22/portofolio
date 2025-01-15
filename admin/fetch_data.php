@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../db/db.php';
 function fetchProjects() {
     global $conn;
     $result = $conn->query("SELECT * FROM projects");

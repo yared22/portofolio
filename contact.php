@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include 'db/db.php';
 
 
 $result = mysqli_query($conn, "SELECT * FROM contact");
