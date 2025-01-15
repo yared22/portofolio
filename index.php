@@ -63,6 +63,9 @@ $index_content = mysqli_fetch_assoc($result);
                     <li class="mr-3">
                         <a href="https://instagram.com" class="text-dark">Instagram</a>
                     </li>
+                    <li class="mr-3">
+                        <a href="https://github.com/yared" class="text-dark">GitHub</a>
+                    </li>
                 </ul>
             </div>
         </div>
