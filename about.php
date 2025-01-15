@@ -25,11 +25,12 @@ $about = mysqli_fetch_assoc($result);
                 <a class="nav-link" href="about.php">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+            
         </ul>
     </div>
 </nav>
