@@ -1,7 +1,6 @@
 <?php
 include 'db/db.php';
 
-// Fetch the index content from the database
 $result = mysqli_query($conn, "SELECT * FROM index_content LIMIT 1");
 $index_content = mysqli_fetch_assoc($result);
 ?>
@@ -44,12 +43,11 @@ $index_content = mysqli_fetch_assoc($result);
             <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid rounded-circle" style="width: 250px;"> <!-- Increased size -->
         </div>
         <div class="col-md-6">
-            <h1 style="font-size: 3rem;  margin-left: -300px;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> <!-- Increased size -->
-            <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p> <!-- Increased size -->
+            <h1 style="font-size: 3rem;  margin-left: -300px;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> 
+            <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
         </div>
     </div>
 </div>
-
 <footer class="bg-light text-center text-lg-start mt-2">
     <div class="container p-4">
         <div class="row justify-content-center">
