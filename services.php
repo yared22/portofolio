@@ -1,8 +1,8 @@
 <?php
 include 'db/db.php';
 
-$result = mysqli_query($conn, "SELECT * FROM index_content LIMIT 1");
-$index_content = mysqli_fetch_assoc($result);
+// Fetch existing services
+$services_result = mysqli_query($conn, "SELECT * FROM services");
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ $index_content = mysqli_fetch_assoc($result);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($index_content['name']) ? $index_content['name'] : 'Portfolio'; ?></title>
+    <title>Services</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -40,22 +40,34 @@ $index_content = mysqli_fetch_assoc($result);
     </div>
 </nav>
 
-<div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid rounded-circle" style="width: 250px;"> <!-- Increased size -->
-        </div>
-        <div class="col-md-6">
-            <h1 style="font-size: 3rem;  margin-left: -300px;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> 
-            <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
-        </div>
-    </div>
+<div class="container mt-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
+    <h1 class="mt-4">Available Services</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while ($service = mysqli_fetch_assoc($services_result)) { ?>
+            <tr>
+                <td><?php echo $service['header']; ?></td>
+                <td><?php echo $service['paragraph']; ?></td>
+                <td><img src="<?php echo $service['image_url']; ?>" alt="Service Image" width="100" class="img-fluid"></td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <a href="index.php" class="btn btn-link">Back to Home</a>
 </div>
+
 <footer class="bg-light text-center text-lg-start mt-2">
     <div class="container p-4">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <h5 class="text-uppercase">Follow Me</h5>
+                <h5 class="text-uppercase">Follow Us</h5>
                 <ul class="list-unstyled d-flex">
                     <li class="mr-3">
                         <a href="https://facebook.com" class="text-dark">Facebook</a>

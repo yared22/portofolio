@@ -20,14 +20,17 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
+        <li class="nav-item">
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="services.php">services</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.php">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="signup.php">Admin</a>

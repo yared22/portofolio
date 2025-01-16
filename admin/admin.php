@@ -24,6 +24,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="manage_projects.php">Manage Projects</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_services.php">Manage Services</a>
+            </li>
         </ul>
     </nav>
 </div>
