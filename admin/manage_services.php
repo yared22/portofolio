@@ -70,6 +70,7 @@ $services_result = mysqli_query($conn, "SELECT * FROM services");
             <?php } ?>
         </tbody>
     </table>
+    <a href="admin.php" class="btn btn-link">Back to Home</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
