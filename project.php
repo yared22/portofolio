@@ -41,8 +41,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
 
 <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
     <h1 class="mt-4">Projects</h1>
-
-    <h2 class="mt-4">Existing Projects</h2>
+   
     <table class="table table-bordered">
         <thead>
             <tr>
