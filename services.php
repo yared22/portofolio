@@ -1,7 +1,6 @@
 <?php
 include 'db/db.php';
 
-// Fetch existing services
 $services_result = mysqli_query($conn, "SELECT * FROM services");
 ?>
 

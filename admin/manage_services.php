@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-// Fetch existing services
 $services_result = mysqli_query($conn, "SELECT * FROM services");
 ?>
 

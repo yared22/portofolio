@@ -3,8 +3,7 @@ include '../db/db.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-
-    // Fetch the existing service
+   
     $result = mysqli_query($conn, "SELECT * FROM services WHERE id = $id");
     $service = mysqli_fetch_assoc($result);
 

@@ -6,14 +6,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $created_at = date("Y-m-d H:i:s");
-
-    // Hash the password for security
+    
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO admins (username, email, password, created_at) VALUES ('$username', '$email', '$hashed_password', '$created_at')";
     if (mysqli_query($conn, $sql)) {
         echo "Sign up successful!";
-        // Redirect to login or another page
         header("Location: login.php");
         exit();
     } else {

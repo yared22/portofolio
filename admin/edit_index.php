@@ -3,8 +3,7 @@ include '../db/db.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-
-    // Fetch the existing index content
+   
     $result = mysqli_query($conn, "SELECT * FROM index_content WHERE id = $id");
     $index_content = mysqli_fetch_assoc($result);
 
