@@ -55,7 +55,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
             <tr>
                 <td><?php echo $row['title']; ?></td>
                 <td><?php echo $row['description']; ?></td>
-                <td><img src="<?php echo $row['image_url']; ?>" alt="Project Image" width="9000" class="img-fluid"></td> <!-- Increased size -->
+                <td><img src="<?php echo $row['image_url']; ?>" alt="Project Image" width="9000" class="img-fluid"></td>
             </tr>
             <?php } ?>
         </tbody>
