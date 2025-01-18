@@ -61,7 +61,7 @@ $services_result = mysqli_query($conn, "SELECT * FROM services");
             <tr>
                 <td><?php echo $service['header']; ?></td>
                 <td><?php echo $service['paragraph']; ?></td>
-                <td><img src="<?php echo $service['image_url']; ?>" alt="Service Image" width="100"></td>
+                <td><img src="<?php echo $service['image_url']; ?>" alt="Service Image" width="90" class="img-fluid"></td>
                 <td>
                     <a href="edit_services.php?id=<?php echo $service['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
                     <a href="delete_services.php?id=<?php echo $service['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
