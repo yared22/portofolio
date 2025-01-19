@@ -16,17 +16,20 @@
                 <a class="nav-link" href="manage_index.php"> Manage Index</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="manage_about.php">Manage About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="manage_contact.php">Manage Contacts</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="manage_projects.php">Manage Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="manage_services.php">Manage Services</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_contact.php">Manage Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_about.php">Manage About</a>
+            </li>
+            
+           
+            
         </ul>
     </nav>
 </div>
