@@ -47,6 +47,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
             <tr>
                 <th>Title</th>
                 <th>Description</th>
+                <th>Image</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -55,6 +56,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
             <tr>
                 <td><?php echo $row['title']; ?></td>
                 <td><?php echo $row['description']; ?></td>
+                <td><img src="<?php echo $row['image_url']; ?>" alt="Project Image" width="90" class="img-fluid"></td>
                 <td>
                     <a href="edit_project.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
                     <a href="delete_project.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
