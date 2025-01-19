@@ -2,8 +2,8 @@
 include '../db/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = $_POST['title'];
-    $description = $_POST['description'];
+    $title = mysqli_real_escape_string($conn, $_POST['title']);
+    $description = mysqli_real_escape_string($conn, $_POST['description']);
     
     $sql = "INSERT INTO about (title, description) VALUES ('$title', '$description') ON DUPLICATE KEY UPDATE description='$description'";
     if (mysqli_query($conn, $sql)) {
