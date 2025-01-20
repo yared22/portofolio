@@ -27,6 +27,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="manage_about.php">Manage About</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_resume.php">Manage Resume</a>
+            </li>
             
            
             

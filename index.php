@@ -25,13 +25,16 @@ $index_content = mysqli_fetch_assoc($result);
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="services.php">services</a>
+                <a class="nav-link" href="services.php">Services</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.php">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.php">Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="signup.php">Admin</a>
