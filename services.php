@@ -20,7 +20,7 @@ $services_result = mysqli_query($conn, "SELECT * FROM services");
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
             <li class="nav-item">
@@ -44,24 +44,19 @@ $services_result = mysqli_query($conn, "SELECT * FROM services");
 
 <div class="container mt-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
     <h1 class="mt-4">Available Services</h1>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php while ($service = mysqli_fetch_assoc($services_result)) { ?>
-            <tr>
-                <td><?php echo $service['header']; ?></td>
-                <td><?php echo $service['paragraph']; ?></td>
-                <td><img src="<?php echo $service['image_url']; ?>" alt="Service Image" width="700" class="img-fluid"></td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+    <div class="row">
+        <?php while ($service = mysqli_fetch_assoc($services_result)) { ?>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="<?php echo $service['image_url']; ?>" alt="Service Image" class="card-img-top img-fluid" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $service['header']; ?></h5>
+                    <p class="card-text"><?php echo $service['paragraph']; ?></p>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+    </div>
     <a href="index.php" class="btn btn-link">Back to Home</a>
 </div>
 

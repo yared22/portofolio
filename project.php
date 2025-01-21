@@ -20,7 +20,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
             <li class="nav-item">
@@ -44,25 +44,19 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
 
 <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
     <h1 class="mt-4">Projects</h1>
-   
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-            <tr>
-                <td><?php echo $row['title']; ?></td>
-                <td><?php echo $row['description']; ?></td>
-                <td><img src="<?php echo $row['image_url']; ?>" alt="Project Image" width="9000" class="img-fluid"></td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+    <div class="row">
+        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="<?php echo $row['image_url']; ?>" alt="Project Image" class="card-img-top img-fluid" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $row['title']; ?></h5>
+                    <p class="card-text"><?php echo $row['description']; ?></p>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+    </div>
     <a href="index.php" class="btn btn-link">Back to Home</a>
 </div>
 
