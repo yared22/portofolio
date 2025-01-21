@@ -21,7 +21,7 @@ $index_content = mysqli_fetch_assoc($result);
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="project.php">Projects</a>
             </li>
             <li class="nav-item">
@@ -46,11 +46,11 @@ $index_content = mysqli_fetch_assoc($result);
 <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
     <div class="row">
         <div class="col-md-6">
-            <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid rounded-circle" style="width: 250px;"> <!-- Increased size -->
+            <img src="<?php echo isset($index_content['picture_url']) ? $index_content['picture_url'] : 'default.jpg'; ?>" alt="<?php echo isset($index_content['name']) ? $index_content['name'] : 'Profile Picture'; ?>" class="img-fluid" style="width: 430px; border-radius: 15px; margin-bottom: 0; margin-top: 70px;"> 
         </div>
         <div class="col-md-6">
-            <h1 style="font-size: 3rem;  margin-left: -300px;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> 
-            <p class="lead" style="margin-top: 5px; margin-left: -300px; font-size: 1.5rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
+            <h1 style="font-size: 3rem;"><?php echo isset($index_content['name']) ? $index_content['name'] : 'Yared'; ?></h1> 
+            <p class="lead" style="margin-top: 0; margin-bottom: 0; font-size: 1.8rem;"><?php echo isset($index_content['paragraph']) ? $index_content['paragraph'] : 'Welcome to my portfolio!'; ?></p>
         </div>
     </div>
 </div>
