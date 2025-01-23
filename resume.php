@@ -38,6 +38,7 @@ $result = mysqli_query($conn, "SELECT * FROM resumes");
             <a href="<?php echo $resume['file_path']; ?>" download class="btn btn-primary mb-2">Download CV</a>
             <img src="admin/uploads/<?php echo $resume['image_url']; ?>" alt="Resume Image" class="img-fluid" style="width: 100%; max-width: 800px;">
         </div>
+        <a href="index.php" class="btn btn-link">Back to Home</a>
     <?php } ?>
 </div>
 
