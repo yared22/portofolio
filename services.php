@@ -73,10 +73,10 @@ $services_result = mysqli_query($conn, "SELECT * FROM services");
                         <a href="https://twitter.com" class="text-dark">Twitter</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://instagram.com" class="text-dark">Instagram</a>
+                        <a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://github.com/yared" class="text-dark">GitHub</a>
+                        <a href="https://github.com/yared22" class="text-dark">GitHub</a>
                     </li>
                 </ul>
             </div>

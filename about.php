@@ -63,10 +63,10 @@ $about = mysqli_fetch_assoc($result);
                         <a href="https://twitter.com" class="text-dark">Twitter</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://instagram.com" class="text-dark">Instagram</a>
+                        <a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://github.com/yared" class="text-dark">GitHub</a>
+                        <a href="https://github.com/yared22" class="text-dark">GitHub</a>
                     </li>
                 </ul>
             </div>

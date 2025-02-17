@@ -50,8 +50,8 @@ $result = mysqli_query($conn, "SELECT * FROM resumes");
                 <ul class="list-unstyled d-flex">
                     <li class="mr-3"><a href="https://facebook.com" class="text-dark">Facebook</a></li>
                     <li class="mr-3"><a href="https://twitter.com" class="text-dark">Twitter</a></li>
-                    <li class="mr-3"><a href="https://instagram.com" class="text-dark">Instagram</a></li>
-                    <li class="mr-3"><a href="https://github.com/yared" class="text-dark">GitHub</a></li>
+                    <li class="mr-3"><a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a></li>
+                    <li class="mr-3"><a href="https://github.com/yared22" class="text-dark">GitHub</a></li>
                 </ul>
             </div>
         </div>

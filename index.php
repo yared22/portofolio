@@ -61,16 +61,16 @@ $index_content = mysqli_fetch_assoc($result);
                 <h5 class="text-uppercase">Follow Me</h5>
                 <ul class="list-unstyled d-flex">
                     <li class="mr-3">
-                        <a href="https://facebook.com" class="text-dark">Facebook</a>
+                        <a href="https://facebook.com/" class="text-dark">Facebook</a>
                     </li>
                     <li class="mr-3">
                         <a href="https://twitter.com" class="text-dark">Twitter</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://instagram.com" class="text-dark">Instagram</a>
+                        <a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://github.com/yared" class="text-dark">GitHub</a>
+                        <a href="https://github.com/yared22" class="text-dark">GitHub</a>
                     </li>
                 </ul>
             </div>
