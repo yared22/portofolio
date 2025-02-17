@@ -60,7 +60,7 @@ $about = mysqli_fetch_assoc($result);
                         <a href="https://facebook.com" class="text-dark">Facebook</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://twitter.com" class="text-dark">Twitter</a>
+                        <a href="https://x.com" class="text-dark">X</a>
                     </li>
                     <li class="mr-3">
                         <a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a>

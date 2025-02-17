@@ -70,7 +70,7 @@ $result = mysqli_query($conn, "SELECT * FROM projects");
                         <a href="https://facebook.com/yared" class="text-dark">Facebook</a>
                     </li>
                     <li class="mr-3">
-                        <a href="https://twitter.com/yared" class="text-dark">X</a>
+                        <a href="https://x.com/yared" class="text-dark">X</a>
                     </li>
                     <li class="mr-3">
                         <a href="https://instagram.com/yarednegassi" class="text-dark">Instagram</a>
