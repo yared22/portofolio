@@ -22,10 +22,12 @@ if (!$result) {
 </head>
 <body>
 <div class="container">
-    <h1 class="mt-4">Manage Users</h1>
+    <h1 class="mt-4 mb-4">Manage Users</h1>
     
     <?php if (mysqli_num_rows($result) > 0): ?>
-        <table class="table table-bordered">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+
             <thead>
                 <tr>
                     <th>ID</th>
@@ -49,15 +51,25 @@ if (!$result) {
                 </tr>
                 <?php endwhile; ?>
             </tbody>
-        </table>
+            </table>
+        </div>
+
+        </div>
+
     <?php else: ?>
         <div class="alert alert-info">No users found.</div>
     <?php endif; ?>
     
-    <a href="admin.php" class="btn btn-link">Back to Admin</a>
+    <a href="admin.php" class="btn btn-link">Back to Home</a>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
