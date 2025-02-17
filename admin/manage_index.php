@@ -46,7 +46,7 @@ $index_content = mysqli_fetch_assoc($result);
         <button type="submit" class="btn btn-primary">Save Changes</button>
         <a href="edit_index.php?id=<?php echo isset($index_content['id']) ? $index_content['id'] : ''; ?>" class="btn btn-secondary">Edit</a>
     </form>
-    <a href="admin.php" class="btn btn-link">Back to Admin</a>
+    <a href="admin.php" class="btn btn-link">Back to Home</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
